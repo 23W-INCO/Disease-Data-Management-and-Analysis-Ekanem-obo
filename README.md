@@ -42,5 +42,5 @@ The "Advanced Cardiovascular Health Analytics and Management System" is designed
 
 
 
-![Alt text](https://github.com/Ekanem-obo/Disease-Data-Management-and-Analysis/blob/main/heatmap.png)
+![Alt text](https://github.com/Ekanem-obo/Disease-Data-Management-and-Analysis/blob/main/icm.png)
 
