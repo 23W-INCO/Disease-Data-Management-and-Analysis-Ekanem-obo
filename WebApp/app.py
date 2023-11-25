@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load and process the dataset
-file_path = './dataset/synthetic_chf_patient_ddata.json'
+file_path = './dataset/chf_patient_data.json'
 data_json = pd.read_json(file_path)
 # Extracting nested data from 'entry' and 'resource' keys
 extracted_data = [entry['resource'] for entry in data_json['entry']]
