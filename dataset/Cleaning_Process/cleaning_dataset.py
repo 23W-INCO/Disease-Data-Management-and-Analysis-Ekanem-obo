@@ -28,7 +28,7 @@ def clean_data_for_chart(patients):
             cleaned_data.append(cleaned_observation)
     return cleaned_data
 
-url = 'https://raw.githubusercontent.com/Ekanem-obo/Disease-Data-Management-and-Analysis/main/dataset/patients_data.json'
+url = 'https://github.com/Ekanem-obo/Disease-Data-Management-and-Analysis/blob/main/dataset/raw/patients_data.json'
 response = requests.get(url)
 patients_data = response.json()
 
