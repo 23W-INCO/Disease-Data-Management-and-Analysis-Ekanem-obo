@@ -81,7 +81,7 @@ function updateChart(selectedPatientData) {
         tooltip.transition()
           .duration(200)
           .style("opacity", .9);
-        tooltip.html(`Date: ${d3.timeFormat("%Y-%m-%d")(d.date)}<br/>Cholesterol: ${d.cholesterol}<br/>BP: ${d.BP}<br/>MED: ${d.Med}<br/>BMI: ${d.BMI}<br/>Age: ${d.age}`)
+        tooltip.html(`Date: ${d3.timeFormat("%Y-%m-%d")(d.date)}<br/>Cholesterol: ${d.cholesterol}<br/>BP: ${d.BP}<br/>MED: ${d.Med}<br/>BMI: ${d.BMI}`)
           .style("left", `${event.pageX}px`)
           .style("top", `${event.pageY - 28}px`);
       })
