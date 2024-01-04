@@ -7,13 +7,18 @@
   <link rel="stylesheet" href="style.css">
   <!-- D3.js library -->
   <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvg/1.5/canvg.min.js"></script>
+  <script>console.log("canvg defined:", typeof canvg !== 'undefined');</script>
+
+
 </head>
 <body>
+  
   <div id="selection">
     <label for="patient-select">Select Patient:</label>
     <select id="patient-select">
       <!-- Options will be populated by script.js -->
-    </select>
+    </select>     <button id="downloadBtn">Download Chart</button>
   </div>
 
   <!-- Sliders for Data Filtering -->
