@@ -19,9 +19,9 @@
    - These analytical tools are designed to identify patterns, anomalies, and trends in patient data, facilitating early intervention and tailored health strategies.
    - Interactive Features: Enabling healthcare professionals to delve into specific aspects of a patient's cholesterol health history, with functionalities like sliders which filter the dataset according to the selected range and update the chart as well as drop-down to select various patients. Users can hover at any point to see more information on the patients
    - Download Feature: This lets users save the information they see on the charts or the raw data. They can keep these as PDFs (for the charts) or as CSV/Excel files (for the data). This is beneficial for the following reasons.
-           -Patient Communication
-           -Data Backup
-           -Compliance and Legal Documentation
+     -Patient Communication
+     -Data Backup
+     -Compliance and Legal Documentation
 
 **Outcome and Impact**:
 The system enhances understanding and management of cholesterol-related health issues, which is crucial in cardiovascular health. It offers clear insights into patient data patterns, focusing on cholesterol levels. This helps healthcare professionals interpret and respond to changes in cholesterol and its effects on overall health. By focusing on cholesterol, the system supports personalized, data-driven treatment plans, leading to better patient outcomes and more effective management of cholesterol-related conditions.
