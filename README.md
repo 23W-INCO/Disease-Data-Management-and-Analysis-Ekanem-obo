@@ -24,10 +24,10 @@
      - Compliance and Legal Documentation
 
 **Outcome and Impact**:
-The system enhances understanding and management of cholesterol-related health issues, which is crucial in cardiovascular health. It offers clear insights into patient data patterns, focusing on cholesterol levels. This helps healthcare professionals interpret and respond to changes in cholesterol and its effects on overall health. By focusing on cholesterol, the system supports personalized, data-driven treatment plans, leading to better patient outcomes and more effective management of cholesterol-related conditions.
+The system enhances understanding and management of cholesterol-related health issues, which is crucial in cardiovascular health. It offers clear insights into patient data patterns, focusing on cholesterol levels. This helps healthcare professionals interpret and respond to changes in cholesterol and its effects on overall health. By focusing on cholesterol, the system supports personalized, data-driven treatment plans, leading to better patient outcomes and more effective management of cholesterol-related conditions. A snippet of output can be seen in the image below. 
 
 **Conclusion**:
-This system stands as a pivotal tool in modern healthcare, transforming the way cholesterol levels are monitored and managed. Its emphasis on clear data visualization and patient-specific analysis marks a significant step forward in cardiovascular health management. With its ability to turn complex data into actionable insights, it not only aids healthcare professionals in making informed decisions but also empowers patients in their health journeys. The ultimate goal is to improve health outcomes and enhance the quality of life for those managing cholesterol-related conditions.
+This system stands as a pivotal tool in modern healthcare, transforming the way cholesterol levels are monitored and managed. Its emphasis on clear data visualization and patient-specific analysis marks a significant step forward in cardiovascular health management. With its ability to turn complex data into actionable insights, it not only aids healthcare professionals in making informed decisions but also empowers patients in their health journeys. The ultimate goal is to improve health outcomes and enhance the quality of life for those managing cholesterol-related conditions. 
 
 
 
