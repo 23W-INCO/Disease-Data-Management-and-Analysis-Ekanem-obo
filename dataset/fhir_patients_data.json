@@ -1,0 +1,302 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/Patient/patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-1",
+        "name": [
+          {
+            "use": "official",
+            "family": "Austin",
+            "given": [
+              "Larry"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1972-03-18",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "62970 Daniel Ferry Suite 482"
+            ],
+            "city": "Adkinshaven",
+            "state": "North Carolina",
+            "postalCode": "65715"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+              "code": "W"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/observation-1-bmi",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "valueQuantity": {
+          "value": 22.3,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/observation-1-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 162,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 95,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/observation-1-cholesterol",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "valueQuantity": {
+          "value": 179,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Patient/patient-2",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-2",
+        "name": [
+          {
+            "use": "official",
+            "family": "Mercado",
+            "given": [
+              "Daniel"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1991-04-03",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "258 Michelle Path"
+            ],
+            "city": "Bowenton",
+            "state": "Idaho",
+            "postalCode": "50767"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+              "code": "M"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/observation-2-bmi",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "valueQuantity": {
+          "value": 31.1,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/observation-2-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 173,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 95,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/observation-2-cholesterol",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "valueQuantity": {
+          "value": 221,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    }
+  ]
+}
