@@ -10,23 +10,23 @@
         "name": [
           {
             "use": "official",
-            "family": "Austin",
+            "family": "Wallace",
             "given": [
-              "Larry"
+              "Wendy"
             ]
           }
         ],
         "gender": "male",
-        "birthDate": "1972-03-18",
+        "birthDate": "1983-07-03",
         "address": [
           {
             "use": "home",
             "line": [
-              "62970 Daniel Ferry Suite 482"
+              "0823 Ariana Keys Apt. 665"
             ],
-            "city": "Adkinshaven",
-            "state": "North Carolina",
-            "postalCode": "65715"
+            "city": "Roberthaven",
+            "state": "Illinois",
+            "postalCode": "51472"
           }
         ],
         "maritalStatus": {
@@ -57,9 +57,9 @@
         "subject": {
           "reference": "Patient/patient-1"
         },
-        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "effectiveDateTime": "2024-01-20T05:55:50.025164Z",
         "valueQuantity": {
-          "value": 22.3,
+          "value": 19.9,
           "unit": "kg/m2",
           "system": "http://unitsofmeasure.org",
           "code": "kg/m2"
@@ -84,7 +84,7 @@
         "subject": {
           "reference": "Patient/patient-1"
         },
-        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "effectiveDateTime": "2024-01-20T05:55:50.025164Z",
         "component": [
           {
             "code": {
@@ -97,7 +97,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 162,
+              "value": 116,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -114,7 +114,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 95,
+              "value": 85,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -141,13 +141,54 @@
         "subject": {
           "reference": "Patient/patient-1"
         },
-        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "effectiveDateTime": "2024-01-20T05:55:50.025164Z",
         "valueQuantity": {
-          "value": 179,
+          "value": 233,
           "unit": "mg/dL",
           "system": "http://unitsofmeasure.org",
           "code": "mg/dL"
         }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/medication-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2123111",
+              "display": "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2024-01-20T05:55:50.025164Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -158,23 +199,23 @@
         "name": [
           {
             "use": "official",
-            "family": "Mercado",
+            "family": "Bernard",
             "given": [
-              "Daniel"
+              "Paul"
             ]
           }
         ],
         "gender": "female",
-        "birthDate": "1991-04-03",
+        "birthDate": "1961-03-27",
         "address": [
           {
             "use": "home",
             "line": [
-              "258 Michelle Path"
+              "5687 Gonzalez Point"
             ],
-            "city": "Bowenton",
-            "state": "Idaho",
-            "postalCode": "50767"
+            "city": "Garzaside",
+            "state": "South Dakota",
+            "postalCode": "96776"
           }
         ],
         "maritalStatus": {
@@ -205,9 +246,9 @@
         "subject": {
           "reference": "Patient/patient-2"
         },
-        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "effectiveDateTime": "2024-01-20T05:55:50.026164Z",
         "valueQuantity": {
-          "value": 31.1,
+          "value": 33.7,
           "unit": "kg/m2",
           "system": "http://unitsofmeasure.org",
           "code": "kg/m2"
@@ -232,7 +273,7 @@
         "subject": {
           "reference": "Patient/patient-2"
         },
-        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "effectiveDateTime": "2024-01-20T05:55:50.026164Z",
         "component": [
           {
             "code": {
@@ -245,7 +286,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 173,
+              "value": 114,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -262,7 +303,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 95,
+              "value": 71,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -289,13 +330,54 @@
         "subject": {
           "reference": "Patient/patient-2"
         },
-        "effectiveDateTime": "2024-01-19T01:33:21.905894Z",
+        "effectiveDateTime": "2024-01-20T05:55:50.026164Z",
         "valueQuantity": {
-          "value": 221,
+          "value": 208,
           "unit": "mg/dL",
           "system": "http://unitsofmeasure.org",
           "code": "mg/dL"
         }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/medication-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2003656",
+              "display": "Omeprazole 20 MG Disintegrating Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2024-01-20T05:55:50.026164Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Omeprazole 20 MG Disintegrating Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
       }
     }
   ]
