@@ -10,23 +10,23 @@
         "name": [
           {
             "use": "official",
-            "family": "Williams",
+            "family": "Vang",
             "given": [
-              "John"
+              "Glenn"
             ]
           }
         ],
-        "gender": "male",
-        "birthDate": "1966-05-18",
+        "gender": "female",
+        "birthDate": "1972-12-14",
         "address": [
           {
             "use": "home",
             "line": [
-              "446 Jennifer Pike"
+              "58333 Stanley Parks"
             ],
-            "city": "West Laurenchester",
-            "state": "New York",
-            "postalCode": "97689"
+            "city": "New Kathleen",
+            "state": "Maryland",
+            "postalCode": "81669"
           }
         ],
         "maritalStatus": {
@@ -40,10 +40,10 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/Observation/observation-1-bmi",
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2017-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "observation-1-bmi",
+        "id": "observation-1-bmi-2017-1",
         "status": "final",
         "code": {
           "coding": [
@@ -57,9 +57,9 @@
         "subject": {
           "reference": "Patient/patient-1"
         },
-        "effectiveDateTime": "2017-01-06T00:00:00Z",
+        "effectiveDateTime": "2017-06-12T00:00:00Z",
         "valueQuantity": {
-          "value": 37.3,
+          "value": 37.2,
           "unit": "kg/m2",
           "system": "http://unitsofmeasure.org",
           "code": "kg/m2"
@@ -67,10 +67,10 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/Observation/observation-1-bp",
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2017-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "observation-1-bp",
+        "id": "observation-1-bp-2017-1",
         "status": "final",
         "code": {
           "coding": [
@@ -84,7 +84,3540 @@
         "subject": {
           "reference": "Patient/patient-1"
         },
-        "effectiveDateTime": "2017-01-06T00:00:00Z",
+        "effectiveDateTime": "2017-06-12T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 161,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 102,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2017-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2017-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2017-06-12T00:00:00Z",
+        "valueQuantity": {
+          "value": 156,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2017-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2017-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "429503",
+              "display": "Hydrochlorothiazide 12.5 MG Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2017-06-12T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Hydrochlorothiazide 12.5 MG Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2017-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2017-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2017-04-22T00:00:00Z",
+        "valueQuantity": {
+          "value": 28.4,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2017-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2017-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2017-04-22T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 110,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 66,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2017-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2017-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2017-04-22T00:00:00Z",
+        "valueQuantity": {
+          "value": 147,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2017-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2017-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2003656",
+              "display": "Omeprazole 20 MG Disintegrating Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2017-04-22T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Omeprazole 20 MG Disintegrating Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2017-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2017-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2017-12-13T00:00:00Z",
+        "valueQuantity": {
+          "value": 39.0,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2017-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2017-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2017-12-13T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 119,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 85,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2017-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2017-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2017-12-13T00:00:00Z",
+        "valueQuantity": {
+          "value": 124,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2017-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2017-3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2123111",
+              "display": "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2017-12-13T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2018-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2018-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-09-20T00:00:00Z",
+        "valueQuantity": {
+          "value": 19.3,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2018-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2018-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-09-20T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 147,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 84,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2018-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2018-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-09-20T00:00:00Z",
+        "valueQuantity": {
+          "value": 238,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2018-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2018-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2123111",
+              "display": "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-09-20T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2018-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2018-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-11-10T00:00:00Z",
+        "valueQuantity": {
+          "value": 21.7,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2018-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2018-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-11-10T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 175,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 74,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2018-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2018-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-11-10T00:00:00Z",
+        "valueQuantity": {
+          "value": 167,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2018-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2018-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "429503",
+              "display": "Hydrochlorothiazide 12.5 MG Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-11-10T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Hydrochlorothiazide 12.5 MG Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2018-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2018-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-11-02T00:00:00Z",
+        "valueQuantity": {
+          "value": 25.3,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2018-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2018-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-11-02T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 178,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 96,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2018-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2018-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-11-02T00:00:00Z",
+        "valueQuantity": {
+          "value": 146,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2018-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2018-3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "308416",
+              "display": "aspirin 81 MG Delayed Release Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2018-11-02T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of aspirin 81 MG Delayed Release Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2019-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2019-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-05-11T00:00:00Z",
+        "valueQuantity": {
+          "value": 30.0,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2019-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2019-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-05-11T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 127,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 75,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2019-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2019-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-05-11T00:00:00Z",
+        "valueQuantity": {
+          "value": 207,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2019-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2019-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2003656",
+              "display": "Omeprazole 20 MG Disintegrating Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-05-11T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Omeprazole 20 MG Disintegrating Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2019-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2019-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-01-05T00:00:00Z",
+        "valueQuantity": {
+          "value": 24.9,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2019-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2019-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-01-05T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 117,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 78,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2019-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2019-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-01-05T00:00:00Z",
+        "valueQuantity": {
+          "value": 220,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2019-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2019-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "308416",
+              "display": "aspirin 81 MG Delayed Release Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-01-05T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of aspirin 81 MG Delayed Release Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2019-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2019-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-05-21T00:00:00Z",
+        "valueQuantity": {
+          "value": 39.0,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2019-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2019-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-05-21T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 115,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 66,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2019-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2019-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-05-21T00:00:00Z",
+        "valueQuantity": {
+          "value": 140,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2019-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2019-3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2003656",
+              "display": "Omeprazole 20 MG Disintegrating Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2019-05-21T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Omeprazole 20 MG Disintegrating Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2020-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2020-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-07-01T00:00:00Z",
+        "valueQuantity": {
+          "value": 39.4,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2020-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2020-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-07-01T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 112,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 120,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2020-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2020-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-07-01T00:00:00Z",
+        "valueQuantity": {
+          "value": 170,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2020-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2020-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "308416",
+              "display": "aspirin 81 MG Delayed Release Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-07-01T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of aspirin 81 MG Delayed Release Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2020-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2020-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-05-18T00:00:00Z",
+        "valueQuantity": {
+          "value": 35.2,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2020-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2020-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-05-18T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 158,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 82,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2020-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2020-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-05-18T00:00:00Z",
+        "valueQuantity": {
+          "value": 161,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2020-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2020-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2123111",
+              "display": "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-05-18T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2020-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2020-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-11-02T00:00:00Z",
+        "valueQuantity": {
+          "value": 22.4,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2020-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2020-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-11-02T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 125,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 116,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2020-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2020-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-11-02T00:00:00Z",
+        "valueQuantity": {
+          "value": 156,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2020-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2020-3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "429503",
+              "display": "Hydrochlorothiazide 12.5 MG Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2020-11-02T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Hydrochlorothiazide 12.5 MG Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2021-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2021-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-05-22T00:00:00Z",
+        "valueQuantity": {
+          "value": 27.2,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2021-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2021-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-05-22T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 169,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 96,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2021-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2021-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-05-22T00:00:00Z",
+        "valueQuantity": {
+          "value": 165,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2021-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2021-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "308416",
+              "display": "aspirin 81 MG Delayed Release Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-05-22T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of aspirin 81 MG Delayed Release Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2021-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2021-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-02-14T00:00:00Z",
+        "valueQuantity": {
+          "value": 24.8,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2021-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2021-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-02-14T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 137,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 86,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2021-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2021-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-02-14T00:00:00Z",
+        "valueQuantity": {
+          "value": 213,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2021-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2021-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "429503",
+              "display": "Hydrochlorothiazide 12.5 MG Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-02-14T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Hydrochlorothiazide 12.5 MG Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bmi-2021-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bmi-2021-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-11-16T00:00:00Z",
+        "valueQuantity": {
+          "value": 19.7,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-bp-2021-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-bp-2021-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-11-16T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 146,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 71,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/1-cholesterol-2021-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1-cholesterol-2021-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-11-16T00:00:00Z",
+        "valueQuantity": {
+          "value": 157,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/1-med-2021-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-1-med-2021-3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2003656",
+              "display": "Omeprazole 20 MG Disintegrating Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2021-11-16T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Omeprazole 20 MG Disintegrating Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Patient/patient-2",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-2",
+        "name": [
+          {
+            "use": "official",
+            "family": "Taylor",
+            "given": [
+              "Evan"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1989-07-20",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "24061 Sandoval Via Suite 596"
+            ],
+            "city": "West Gary",
+            "state": "Oregon",
+            "postalCode": "40502"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+              "code": "W"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2017-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2017-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-01-15T00:00:00Z",
+        "valueQuantity": {
+          "value": 23.6,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2017-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2017-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-01-15T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 136,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 98,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2017-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2017-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-01-15T00:00:00Z",
+        "valueQuantity": {
+          "value": 198,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2017-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2017-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2003656",
+              "display": "Omeprazole 20 MG Disintegrating Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-01-15T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Omeprazole 20 MG Disintegrating Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2017-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2017-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-11-08T00:00:00Z",
+        "valueQuantity": {
+          "value": 39.4,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2017-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2017-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-11-08T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 153,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 108,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2017-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2017-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-11-08T00:00:00Z",
+        "valueQuantity": {
+          "value": 188,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2017-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2017-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2003656",
+              "display": "Omeprazole 20 MG Disintegrating Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-11-08T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Omeprazole 20 MG Disintegrating Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2017-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2017-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-06-20T00:00:00Z",
+        "valueQuantity": {
+          "value": 33.4,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2017-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2017-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-06-20T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 111,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 64,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2017-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2017-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-06-20T00:00:00Z",
+        "valueQuantity": {
+          "value": 174,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2017-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2017-3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "308416",
+              "display": "aspirin 81 MG Delayed Release Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2017-06-20T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of aspirin 81 MG Delayed Release Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2018-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2018-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-05-14T00:00:00Z",
+        "valueQuantity": {
+          "value": 17.0,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2018-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2018-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-05-14T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 137,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 86,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2018-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2018-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-05-14T00:00:00Z",
+        "valueQuantity": {
+          "value": 130,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2018-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2018-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2123111",
+              "display": "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-05-14T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2018-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2018-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-05-04T00:00:00Z",
+        "valueQuantity": {
+          "value": 31.4,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2018-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2018-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-05-04T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 160,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 84,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2018-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2018-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-05-04T00:00:00Z",
+        "valueQuantity": {
+          "value": 220,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2018-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2018-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2003656",
+              "display": "Omeprazole 20 MG Disintegrating Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-05-04T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Omeprazole 20 MG Disintegrating Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2018-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2018-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-02-06T00:00:00Z",
+        "valueQuantity": {
+          "value": 38.0,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2018-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2018-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-02-06T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 119,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 68,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2018-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2018-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-02-06T00:00:00Z",
+        "valueQuantity": {
+          "value": 161,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2018-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2018-3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "429503",
+              "display": "Hydrochlorothiazide 12.5 MG Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2018-02-06T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Hydrochlorothiazide 12.5 MG Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2019-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2019-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-02-07T00:00:00Z",
+        "valueQuantity": {
+          "value": 35.2,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2019-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2019-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-02-07T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 119,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 99,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2019-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2019-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-02-07T00:00:00Z",
+        "valueQuantity": {
+          "value": 150,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2019-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2019-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2123111",
+              "display": "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-02-07T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2019-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2019-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-10-30T00:00:00Z",
+        "valueQuantity": {
+          "value": 16.0,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2019-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2019-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-10-30T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 113,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 70,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2019-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2019-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-10-30T00:00:00Z",
+        "valueQuantity": {
+          "value": 121,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2019-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2019-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "308416",
+              "display": "aspirin 81 MG Delayed Release Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-10-30T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of aspirin 81 MG Delayed Release Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2019-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2019-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-06-29T00:00:00Z",
+        "valueQuantity": {
+          "value": 35.0,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2019-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2019-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-06-29T00:00:00Z",
         "component": [
           {
             "code": {
@@ -114,7 +3647,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 85,
+              "value": 105,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -124,10 +3657,10 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/Observation/observation-1-cholesterol",
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2019-3",
       "resource": {
         "resourceType": "Observation",
-        "id": "observation-1-cholesterol",
+        "id": "observation-2-cholesterol-2019-3",
         "status": "final",
         "code": {
           "coding": [
@@ -139,11 +3672,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/patient-1"
+          "reference": "Patient/patient-2"
         },
-        "effectiveDateTime": "2017-01-06T00:00:00Z",
+        "effectiveDateTime": "2019-06-29T00:00:00Z",
         "valueQuantity": {
-          "value": 185,
+          "value": 132,
           "unit": "mg/dL",
           "system": "http://unitsofmeasure.org",
           "code": "mg/dL"
@@ -151,10 +3684,466 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/MedicationStatement/medication-1",
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2019-3",
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "medication-1",
+        "id": "medication-2-med-2019-3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2123111",
+              "display": "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2019-06-29T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2020-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2020-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-04-21T00:00:00Z",
+        "valueQuantity": {
+          "value": 27.3,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2020-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2020-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-04-21T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 110,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 92,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2020-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2020-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-04-21T00:00:00Z",
+        "valueQuantity": {
+          "value": 163,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2020-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2020-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2123111",
+              "display": "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-04-21T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2020-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2020-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-08-11T00:00:00Z",
+        "valueQuantity": {
+          "value": 26.9,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2020-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2020-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-08-11T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 122,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 108,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2020-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2020-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-08-11T00:00:00Z",
+        "valueQuantity": {
+          "value": 228,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2020-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2020-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2003656",
+              "display": "Omeprazole 20 MG Disintegrating Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-08-11T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Omeprazole 20 MG Disintegrating Oral Tablet",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2020-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2020-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-11-04T00:00:00Z",
+        "valueQuantity": {
+          "value": 19.2,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2020-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2020-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-11-04T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 111,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 77,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2020-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2020-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2020-11-04T00:00:00Z",
+        "valueQuantity": {
+          "value": 215,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2020-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2020-3",
         "status": "active",
         "medicationCodeableConcept": {
           "coding": [
@@ -166,9 +4155,9 @@
           ]
         },
         "subject": {
-          "reference": "Patient/patient-1"
+          "reference": "Patient/patient-2"
         },
-        "effectiveDateTime": "2017-01-06T00:00:00Z",
+        "effectiveDateTime": "2020-11-04T00:00:00Z",
         "dosage": [
           {
             "text": "Take 1 tablet of aspirin 81 MG Delayed Release Oral Tablet",
@@ -192,47 +4181,10 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/Patient/patient-2",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "patient-2",
-        "name": [
-          {
-            "use": "official",
-            "family": "Gregory",
-            "given": [
-              "Taylor"
-            ]
-          }
-        ],
-        "gender": "female",
-        "birthDate": "1988-02-16",
-        "address": [
-          {
-            "use": "home",
-            "line": [
-              "910 Ross Crossroad Suite 811"
-            ],
-            "city": "South James",
-            "state": "Arizona",
-            "postalCode": "39119"
-          }
-        ],
-        "maritalStatus": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-              "code": "W"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "fullUrl": "http://example.org/fhir/Observation/observation-2-bmi",
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2021-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "observation-2-bmi",
+        "id": "observation-2-bmi-2021-1",
         "status": "final",
         "code": {
           "coding": [
@@ -246,9 +4198,9 @@
         "subject": {
           "reference": "Patient/patient-2"
         },
-        "effectiveDateTime": "2017-01-19T00:00:00Z",
+        "effectiveDateTime": "2021-07-10T00:00:00Z",
         "valueQuantity": {
-          "value": 19.4,
+          "value": 15.8,
           "unit": "kg/m2",
           "system": "http://unitsofmeasure.org",
           "code": "kg/m2"
@@ -256,10 +4208,10 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/Observation/observation-2-bp",
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2021-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "observation-2-bp",
+        "id": "observation-2-bp-2021-1",
         "status": "final",
         "code": {
           "coding": [
@@ -273,7 +4225,7 @@
         "subject": {
           "reference": "Patient/patient-2"
         },
-        "effectiveDateTime": "2017-01-19T00:00:00Z",
+        "effectiveDateTime": "2021-07-10T00:00:00Z",
         "component": [
           {
             "code": {
@@ -286,7 +4238,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 179,
+              "value": 121,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -303,7 +4255,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 109,
+              "value": 91,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -313,10 +4265,10 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/Observation/observation-2-cholesterol",
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2021-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "observation-2-cholesterol",
+        "id": "observation-2-cholesterol-2021-1",
         "status": "final",
         "code": {
           "coding": [
@@ -330,9 +4282,9 @@
         "subject": {
           "reference": "Patient/patient-2"
         },
-        "effectiveDateTime": "2017-01-19T00:00:00Z",
+        "effectiveDateTime": "2021-07-10T00:00:00Z",
         "valueQuantity": {
-          "value": 223,
+          "value": 192,
           "unit": "mg/dL",
           "system": "http://unitsofmeasure.org",
           "code": "mg/dL"
@@ -340,27 +4292,331 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/MedicationStatement/medication-2",
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2021-1",
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "medication-2",
+        "id": "medication-2-med-2021-1",
         "status": "active",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "2003656",
-              "display": "Omeprazole 20 MG Disintegrating Oral Tablet"
+              "code": "2123111",
+              "display": "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil"
             }
           ]
         },
         "subject": {
           "reference": "Patient/patient-2"
         },
-        "effectiveDateTime": "2017-01-19T00:00:00Z",
+        "effectiveDateTime": "2021-07-10T00:00:00Z",
         "dosage": [
           {
-            "text": "Take 1 tablet of Omeprazole 20 MG Disintegrating Oral Tablet",
+            "text": "Take 1 tablet of albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2021-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2021-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2021-04-27T00:00:00Z",
+        "valueQuantity": {
+          "value": 22.4,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2021-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2021-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2021-04-27T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 149,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 65,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2021-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2021-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2021-04-27T00:00:00Z",
+        "valueQuantity": {
+          "value": 123,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2021-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2021-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2123111",
+              "display": "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2021-04-27T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for Proventil",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bmi-2021-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bmi-2021-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2021-07-11T00:00:00Z",
+        "valueQuantity": {
+          "value": 36.5,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-bp-2021-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-bp-2021-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2021-07-11T00:00:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 150,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 98,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/2-cholesterol-2021-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2-cholesterol-2021-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol total"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2021-07-11T00:00:00Z",
+        "valueQuantity": {
+          "value": 231,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationStatement/2-med-2021-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medication-2-med-2021-3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "429503",
+              "display": "Hydrochlorothiazide 12.5 MG Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-2"
+        },
+        "effectiveDateTime": "2021-07-11T00:00:00Z",
+        "dosage": [
+          {
+            "text": "Take 1 tablet of Hydrochlorothiazide 12.5 MG Oral Tablet",
             "timing": {
               "repeat": {
                 "frequency": 2,
