@@ -33,5 +33,5 @@ This system stands as a pivotal tool in modern healthcare, transforming the way 
 
 
 
-![Alt text](https://github.com/Ekanem-obo/Disease-Data-Management-and-Analysis/blob/main/icm.png)
+![Alt text](https://github.com/Ekanem-obo/Disease-Data-Management-and-Analysis/blob/main/chart.png)
 
